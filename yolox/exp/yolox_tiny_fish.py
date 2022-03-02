@@ -25,7 +25,7 @@ class Exp(MyExp):
         self.train_ann = "fish_p2_75+jam.json"
         self.val_ann = "fish_p2_75+jam.json"
 
-        self.num_classes = 6
+        self.num_classes = 7
 
         self.max_epoch = 35
         self.data_num_workers = 4

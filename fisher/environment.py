@@ -85,8 +85,8 @@ class FishFind:
             cv2.imread('./imgs/food_fy.png'),
         ]
         #self.food_imgs = [cv2.cvtColor(x, cv2.COLOR_BGR2RGB) for x in self.food_imgs]
-        self.ff_dict={'hua jiang':0, 'ji yu':1, 'die yu':2, 'jia long':3, 'pao yu':3}
-        self.dist_dict={'hua jiang':130, 'ji yu':80, 'die yu':80, 'jia long':80, 'pao yu':80}
+        self.ff_dict={'hua jiang':0, 'ji yu':1, 'die yu':2, 'jia long':3, 'pao yu':3, "yao yu":3}
+        self.dist_dict={'hua jiang':130, 'ji yu':80, 'die yu':80, 'jia long':80, 'pao yu':80,"yao yu":80}
         self.food_rgn=[580,400,740,220]
         self.last_fish_type='hua jiang'
         #self.last_fish_type='die yu' # 钓雷鸣仙

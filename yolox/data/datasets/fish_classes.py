@@ -9,4 +9,5 @@ FISH_CLASSES = (
     "ji yu",
     "pao yu",
     "rod",
+    "yao yu",
 )

@@ -113,6 +113,7 @@ def main(exp, args):
             ckpt_file = args.ckpt
         logger.info("loading checkpoint")
         ckpt = torch.load(ckpt_file, map_location="cpu")
+        logger.info("load the model state dict")
         # load the model state dict
         model.load_state_dict(ckpt["model"])
         logger.info("loaded checkpoint done.")
@@ -173,6 +174,7 @@ def start_fishing(predictor, agent, bite_timeout=45):
         if not result:
             do_fish_count += 1
             continue
+        print(ff.last_fish_type)
 
         do_fish_count = 0
         winsound.Beep(700, 500)
